@@ -19,10 +19,29 @@ $departures = array_values($departures);
 
 $departures = $departures[0];
 
+//foreach($departures as $departure){
+	
+	//$line = $departure['line'];
+	//$time = $departure['best_departure_estimate'];
+	
+	//echo "<h2>Bus Number:  " . $line . "</h2> \n <h2>Leaving at " . $time . "</h2>";
+//}
+
+
 foreach($departures as $departure){
 	
 	$line = $departure['line'];
 	$time = $departure['best_departure_estimate'];
 	
-	echo "<h2>Bus Number:  " . $line . "</h2> \n <h2>Leaving at " . $time . "</h2>";
+	$now = new DateTime();
+	$busDueIn = new DateTime($departure['best_departure_estimate']);
+	$interval = $busDueIn->diff($now);
+	$interval = $interval->format("%i minutes");
+	
+	echo "<p>The next number " . $line . " is due in " . $interval . " (due at " . $time . ")</p>";
 }
+
+
+
+
+
