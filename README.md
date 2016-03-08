@@ -1,5 +1,5 @@
-# brighton-bus-stop
-Get the times of the next few buses departing from a stop of your choice. Demo here: http://bupk.es/demo/brighton-bus-stop/
+# bus-stop
+Get the times of the next few buses departing from a stop of your choice. Demo here: https://bupk.es/demo/bus-stop/
 
 Just drop this code onto somewhere that runs PHP (and has in internet connection) and you should be fine...
 
@@ -8,8 +8,6 @@ Uses the API from transportapi.com - currently the code uses the 'free' API key 
 Improvements and plans...
  
 - I need to put some comments on it.
-
-- At the moment it just seems to bring up the first service available (so in the example code it's seeing the next number 28 but not the next 29). This is a pretty basic error that I should be sorting out soon.
 
 - I'd ideally like to get a countdown rather than just saying what time the next bus is due. Probably JS.
 
