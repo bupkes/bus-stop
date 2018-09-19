@@ -1,5 +1,5 @@
 # bus-stop
-Get the times of the next few buses departing from a stop of your choice. Demo here: https://bupk.es/demo/bus-stop/
+Get the times of the next few buses departing from a stop of your choice.
 
 Just drop this code onto somewhere that runs PHP (and has in internet connection) and you should be fine...
 
